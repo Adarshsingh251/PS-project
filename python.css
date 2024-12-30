@@ -1,0 +1,40 @@
+*{
+    margin:0;
+    padding:0;
+    /* box-sizing: border-box; */
+}
+body{
+    background-color: rgb(221, 194, 246);
+    height:100%;
+    width:100%;
+
+}
+
+h1{
+    text-align: center;
+    color:rgb(215, 51, 215);
+   text-decoration:underline solid;
+}
+.python_ka_section{
+    margin-top:20px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.python_info{
+    width:90%;
+    height:850px;
+    margin-bottom:20px;
+    background-color: rgb(214, 180, 228);
+}
+/* .python_info  */
+pre{
+    margin-top:30px;
+    font-size: 40px;
+    text-align: center;
+
+}
+
+.python_info > img{
+    margin-left:260px;
+}
