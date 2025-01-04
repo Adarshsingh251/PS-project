@@ -1,0 +1,520 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: rgb(219, 188, 247);
+    width: 100%;
+    height: 100%;
+}
+
+#header {
+    position: sticky;
+    top: 0;
+
+}
+
+#mylogo {
+    width: 150px;
+    position: absolute;
+    left: 47px;
+    top: 8px;
+}
+
+#main_anchor {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-family: kanit;
+    font-weight: 400;
+    font-size: 27px;
+    color: rgb(215, 246, 166);
+    /* font-family: "Alfa Slab One", serif; */
+    transition: color 0.3s ease-in-out;
+    padding: 8px;
+
+}
+
+#main_anchor:hover {
+    color: rgba(253, 229, 12, 0.958);
+    border-bottom: 2px solid rgb(247, 247, 201);
+    /* border-radius:6px; */
+}
+
+#nav {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(153, 128, 177, 0.7);
+    height: 57px;
+    gap: 32px;
+    box-shadow: 2px 1px 9px black;
+}
+
+/* typed js wala div hai */
+
+.full_div_of_typed_div {
+    margin-top: 30px;
+    height: 400px;
+    width: 100%;
+    /* background-color: red; */
+    /* typed js aur img ko singal line me lane ke liye */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#typed_js {
+    width: 40%;
+    /* typed me jo likha hai wo center me lane ke liye  */
+    text-align: center;
+    /* background-color: rgb(212, 209, 212); */
+    color: purple;
+}
+
+#typed_js span {
+    font-size: 60px;
+    font-weight: 600;
+}
+
+#img_div_hai img {
+    height: 400px;
+    margin-right: 30px;
+    /* background-color: red; */
+}
+
+#img_para {
+    display: flex;
+    color: purple;
+    font-size: 30px;
+
+}
+
+/* login page ka code hai */
+#mainform {
+    height: 500px;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#form {
+    border: 2px solid purple;
+    border-radius: 14px;
+    background-color: lightblue;
+    padding: 26px;
+    font-size: 17px;
+    color: purple;
+    transition: box-shadow 1s ease-in-out;
+}
+
+@media (max-width:400px) {
+    #form {
+        background-color: red;
+        margin-left: 140px;
+
+    }
+}
+
+#form:hover {
+    box-shadow: 5px 4px 16px black;
+}
+
+#course {
+    display: flex;
+    justify-content: center;
+    margin: 18px;
+}
+
+#course_para {
+    color: rgb(173, 38, 173);
+    font-size: 38px;
+    font-weight: bolder;
+    font-family: "Agbalumo", system-ui;
+
+}
+
+/* frontened me go back ka button hai */
+
+
+/* note :-- not needed to give flex properties to go_back */
+
+#go_back a input {
+    border: 3px solid purple;
+    padding: 6px;
+    margin: 20px 0 20px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(78, 14, 143);
+    border-radius: 14px;
+    box-shadow: 4px 5px 9px rgb(88, 124, 171);
+    font-family: monospace;
+}
+
+#card_main {
+    display: flex;
+    justify-content: space-evenly;
+    /* align-items: baseline; */
+}
+
+@media only screen and (min-width:897px) {
+    #card_main {
+        margin-top: 30px;
+    }
+}
+
+@media only screen and (max-width:896px) {
+    #card_main {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #first_card {
+        margin-top: 30px;
+    }
+
+    .third_card {
+        margin-bottom: 20px;
+    }
+}
+
+#first_card {
+    width: 280px;
+    border: 2px solid black;
+    border-radius: 13px;
+    background-color: rgb(241, 224, 235);
+    transition: all 0.7s ease-in-out 0s;
+}
+
+#first_card:hover {
+    box-shadow: 3px 3px 26px 10px rgb(182, 129, 239);
+
+}
+
+#first_card img {
+    width: 100%;
+    border-radius: 13px 13px 0px 0px;
+}
+
+#inner_card h1 {
+    color: purple;
+}
+
+#inner_card p {
+    color: rgb(92, 88, 150);
+}
+
+#inner_card {
+    padding: 10px;
+    /* background-color: rgb(238, 227, 104); */
+
+}
+
+#detail {
+    display: flex;
+    justify-content: end;
+}
+
+#detail a input {
+    border: 3px solid purple;
+    padding: 3px;
+}
+
+#main_course_div {
+    margin: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 13px;
+    margin-top: 100px;
+
+}
+
+@media only screen and (max-width:350px) {
+    #main_course_div {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+        gap: 4px;
+    }
+}
+
+#main_course_div div {
+    border: 4px solid rgb(93, 82, 239);
+    border-radius: 8px;
+    background-color: rgba(253, 178, 227, 0.901);
+    color: rgb(118, 80, 241);
+    padding: 8px;
+    font-size: 53px;
+    font-weight: bolder;
+    transition: box-shadow 1s ease;
+    transition: background-color 1s ease;
+    font-family: "Akaya Kanadaka", system-ui;
+    text-align: center;
+}
+
+#main_course_div div:hover {
+    background-color: rgb(239, 239, 91);
+    box-shadow: 3px 4px 10px black;
+
+}
+
+/* We side _bar ka code hai */
+.side_bar_class {
+    margin-top: 40px;
+}
+
+#side_bar {
+    height: 80px;
+    width: 600px;
+    background-color: rgba(186, 186, 232, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 265px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    border-left: 5px solid rgba(80, 75, 75, 0.869);
+    border-top-right-radius: 9px;
+    border-bottom-right-radius: 9px;
+    font-size: 24px;
+    font-weight: 540;
+}
+
+#side_bar2 {
+    height: 80px;
+    width: 600px;
+    background-color: rgba(193, 229, 248, 0.869);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 470px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    border-right: 5px solid rgba(77, 80, 75, 0.869);
+    border-top-left-radius: 9px;
+    border-bottom-left-radius: 9px;
+    font-size: 24px;
+    font-weight: 480;
+
+}
+
+/* Intro wala column ka code hai */
+
+#intro {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 70px;
+}
+
+
+#intro_container {
+    height: 280px; 
+    width: 820px;
+    /* background-color: rgb(251, 219, 172); */
+    background-color: rgb(54, 1, 101);
+    padding: 10px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#intro_container p {
+    margin-top: 13px;
+    color: yellow;
+    font-size: 20px;
+    padding-left: 10px;
+    font-size: 25px;
+    font-style: italic;
+}
+
+#intro_container img {
+    margin:14px 14px 0px 14px;
+    height: 170px;
+    width: 170px;
+    border-radius: 50%;
+    background-color: yellow;
+    border: 5px solid rgb(248, 99, 99);
+    /* filter: drop-shadow(10px 10px 10px rgb(194, 193, 193)); */
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+/* photo ko zoom karne ke liye */
+
+#intro_container img:hover {
+    transform: scale(1.2);
+}
+
+/* for footer */
+
+footer {
+    text-align: center;
+    padding: 5px;
+    background-color: rgba(30, 30, 30, 0.624);
+    color: white;
+    margin-bottom: 10px;
+    font-size: 17px;
+}
+
+#sidehelp {
+    position: fixed;
+    top: 569px;
+    padding: 4px;
+    right: 15px;
+    font-size: 22px;
+    font-weight: bold;
+    background-color: lightblue;
+    border: 3px solid rgb(46, 25, 237);
+    border-radius: 10px 8px 8px 0px;
+    color: purple;
+    transition: all 0.5s ease-in-out;
+}
+
+#sidehelp:hover {
+    box-shadow: 3px 3px 16px black;
+    transform:translate(10px,10px);
+}
+
+/* yaha se contact.html ka code hai */
+
+#main_boy img {
+    width: 100%;
+    height: 450px;
+    margin-top: 12px;
+    opacity: 0.4;
+}
+
+#main_boy h1 {
+    position: absolute;
+    top: 270px;
+    left: 175px;
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#main_boy p {
+    position: absolute;
+    top: 305px;
+    left: 175px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#king {
+    height: 1000px;
+}
+
+/* contact page ka content hai */
+#head {
+    text-align: center;
+}
+
+#top_head {
+    font-size: 30px;
+    font-weight: 900;
+    font-family: "IBM Plex Sans", serif;
+    margin-top: 10px;
+    line-height: 18px;
+}
+
+#middle_head {
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "IBM Plex Sans", serif;
+}
+
+hr {
+    margin-top: 1rem;
+    height: 4px;
+    background-color: rgb(83, 7, 155);
+    width: 100%;
+}
+
+#main {
+    margin: 40px;
+}
+
+#para {
+    letter-spacing: 0.8px;
+}
+
+#address {
+    display: flex;
+    margin-top: 8px;
+}
+
+#contact {
+    display: flex;
+    margin-top: 8px;
+}
+
+#register {
+    display: flex;
+    margin-top: 8px;
+}
+
+/* contact me form ka code hai */
+
+#main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#second {
+    margin-left: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+#top_para {
+    color: purple;
+    font-size: 30px;
+    font-weight: 500;
+
+}
+
+.box {
+    width: 300px;
+    height: 26px;
+    border-radius: 5px;
+    padding-left: 4px;
+    font-size: 18px;
+}
+
+#box {
+    width: 300px;
+    border-radius: 8px;
+    padding-left: 4px;
+    font-size: 18px;
+}
+
+.submit {
+    /* block use kara hai nhi to submit button side me aa raha hai */
+    display: block;
+    width: 300px;
+    border-radius: 8px;
+    padding-left: 4px;
+    font-size: 18px;
+    background-color: aquamarine;
+}

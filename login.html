@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My course shop</title>
+    <link rel="stylesheet" href="design.css">
+</head>
+<body>
+    <div id="nav">
+        <a href="index.html"  id="main_anchor">Home</a>
+        <a href="course.html"  id="main_anchor">Course</a>
+        <a href="login.html" target="_blank" id="main_anchor">Login
+        </a>
+        <a href="about.html"  id="main_anchor">About us</a>
+        <a href="contact.html"  id="main_anchor">Contact us</a>
+        
+    </div>
+    <!-- for showing heading -->
+    <div id="course">
+        <p id="course_para">Please, login in website and explore more....</p>
+    </div>
+    <!-- <p id="extra_para">Please, login in website and explore more....</p> -->
+
+    <!-- login from ka code hai -->
+    <div id="mainform">
+        <form action="index.html" id="form">
+            <label for="naam">Username:- </label>
+            <input type="text" placeholder="username" name="naam" required>
+            <br><br>
+            <label for="fathernaam">Father Name:- </label>
+            <input type="text" placeholder="Father name" name="fathernaam" required>
+            <br><br>
+            <label for="tel">Mobile Number:- </label>
+            <input type="tel" placeholder="xxxx-xxx-xxx" pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}" name="tel">
+            <br><br>
+            <label for="age">Enter your age:</label>
+            <input type="age" placeholder="Umaar" name="age">
+            <br><br>
+            <label for="brc">Select your branch:</label>
+            <select name="brc" required>
+                <option value="btech">B tech</option>
+                <option value="bca" SELECTED>BCA</option>
+                <option value="mca">MCA</option>
+                <option value="aiml">AIML</option>
+                <option value="EXTC">EXTC</option>
+                <option value="bba">BBA</option>
+            </select>
+            <br><br>
+            <label for="academic">Academic Year:</label>
+            <input type="date" placeholder="year" name-="academic">
+            <br><br>
+            <label for="gender">Gender:- </label>
+            <input type="radio" name="gender" id="male" value="Male">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female" value="Female">
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="trans" value="Transgender">
+            <label for="trans">Transgender</label>     
+            <br><br>
+            <input type="reset" style="background-color:rgb(218, 157, 236);color:purple;border:2px solid rgb(255, 0, 0);border-radius:5px;padding:3px">
+            <input type="submit" style="background-color:rgb(218, 157, 236);color:purple;border:2px solid rgb(255,0,0);border-radius:5px;padding:3px" >
+        </form>
+    </div>
+    </body>
+</html>
